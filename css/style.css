@@ -35,7 +35,7 @@ body {
 
 .menu li a {
   display: block;
-  padding: 10px;
+  padding: 15px;
   margin-right: 10px;
   color: #222;
   text-decoration: none;
@@ -92,6 +92,10 @@ body {
   height: 370px;
   overflow-y: scroll;
   grid-column: 2;
+}
+
+.animais-lista li {
+  cursor: pointer;
 }
 
 .animais-lista::-webkit-scrollbar {
@@ -210,4 +214,66 @@ body {
   .copy {
     margin-bottom: 0px;
   }
+}
+
+.js .js-tabconteudo section {
+  display: none;
+}
+
+.js .js-tabconteudo section.ativo {
+  display: block !important;
+  animation: show .5s forwards;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.js .js-accordion dd {
+  display: none;
+}
+
+.js-accordion dt::after {
+  content: '☟';
+  margin-left: 10px;
+}
+
+.js-accordion dt.ativo::after {
+  content: '☝';
+  margin-left: 10px;
+}
+
+.js-accordion dd.ativo {
+  display: block;
+  animation: slideDown .5s forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+
+  to {
+    opacity: 1;
+    max-height: 200px;
+  }
+}
+
+.js .js-scroll {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+}
+
+.js .js-scroll.ativo {
+  opacity: 1;
+  transition: .3s;
+  transform: translate3d(0, 0, 0);
 }
