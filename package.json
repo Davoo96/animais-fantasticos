@@ -1,0 +1,29 @@
+{
+  "name": "animais-fantasticos",
+  "version": "1.0.0",
+  "description": "Project showing HTML, CSS and JavaScript knowledge.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Davoo96/animais-fantasticos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Davoo96/animais-fantasticos/issues"
+  },
+  "homepage": "https://github.com/Davoo96/animais-fantasticos#readme",
+  "devDependencies": {
+    "@babel/core": "^7.22.10",
+    "@babel/plugin-transform-runtime": "^7.22.10",
+    "@babel/preset-env": "^7.22.10",
+    "babel-loader": "^9.1.3",
+    "eslint": "^8.46.0",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
