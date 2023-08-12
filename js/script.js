@@ -8,6 +8,11 @@ import initDropdownMenu from "./modules/dropdown-menu.js";
 import initMenuMobile from "./modules/menu-mobile.js";
 import initAnimaNumeros from "./modules/anima-numeros.js";
 import initFunctionamento from "./modules/funcionamento.js";
+import SlideNav from "./modules/slide.js";
+
+const slide = new SlideNav(".slide", ".slide-wrapper");
+slide.init();
+slide.addControl(".custom-controls");
 
 initScrollSuave();
 animacaoScroll();
